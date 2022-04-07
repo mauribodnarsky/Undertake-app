@@ -69,9 +69,9 @@ public function __construct() {
 	public function borrarpormesa(){
 		$result=false;
 			while($result==false){
-				$sql="DELETE FROM notificaciones WHERE comanda_id={$this->getComanda_id()} AND ((tipo='{$this->getTipo()}') OR (tipo='A'))";
+				$sql="DELETE FROM notificaciones WHERE comanda_id={$this->getComanda_id()}) AND ((tipo='{$this->getTipo()}') OR (tipo='A'))";
 			$result=$this->db->query($sql);
-				$result=true;
+			$result=true;
 			}
 		return $result;
 	}

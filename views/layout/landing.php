@@ -1373,10 +1373,10 @@ width: 200px !important;
 }
 </style>
 
-<script>
-  $(".page-header ul a").on("click", function (e) {
-  e.preventDefault();
-  const href = $(this).attr("href");
-  $("html, body").animate({ scrollTop: $(href).offset().top }, 300);
-});
-</script>
+  <script>
+    $(".page-header ul a").on("click", function (e) {
+    e.preventDefault();
+    const href = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(href).offset().top }, 300);
+  });
+  </script>
